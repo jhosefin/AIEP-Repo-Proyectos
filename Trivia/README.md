@@ -8,7 +8,7 @@ Aprender los colores en inglés es la forma idónea para que los peques comience
 Aprender las figuras y los colores les enseñan a los niños a pensar sobre los atributos de los objetos y a hacer observaciones sobre similitudes y diferencias – lo cual ayuda a desarrollar el pensamiento lógico que necesitarán para solucionar problemas.</p>
 
 ## Logo
-<img src="logo.jpg">
+<img src="./img/logo.jpg">
 
 ## Color Reference
 
@@ -22,7 +22,7 @@ Aprender las figuras y los colores les enseñan a los niños a pensar sobre los 
 
 ## Screenshots
 
-![Prototype figma]<img src="Trivia.jpg">
+![Prototype figma]<img src="./img/Trivia.jpg">
 
 
 ## Demo Figma Prototype
