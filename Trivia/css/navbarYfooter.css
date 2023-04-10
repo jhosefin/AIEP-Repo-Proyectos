@@ -35,6 +35,10 @@ li  a {
     text-decoration: none;
     padding: 0 0.938em;
 }
+li  a:hover{
+    background-color:aqua;
+    color:#4039a2;
+}
 li.inicio {
     text-align: center;
     margin: 0 0 0 12%;
