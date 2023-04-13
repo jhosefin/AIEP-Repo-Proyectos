@@ -1,0 +1,25 @@
+div.presentacion > h1 {
+    font-size: xxx-large;
+    color: #4985df;
+    font-weight: 100;
+    margin: 10% 0;
+}
+div.presentacion > h2 {
+    color:  #D0D33D;
+    font-weight: 100;
+}
+form {
+    margin: 10% 0;
+    color: #F97777;
+    font-weight: 600;
+}
+input#nickname {
+    border: solid deeppink;
+}
+input[type="submit"] {
+    border-radius: 10px;
+    background-color: #4985df;
+    color: white;
+    border: solid #4985df;
+    padding: 12px;
+}
