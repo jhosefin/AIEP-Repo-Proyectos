@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <link rel="stylesheet" href="./assets/css/navbarYfooter.css">
+    <title>Ingreso</title>        
+</head>
+<body>
+    <!-- ################# React Versión ###################### -->
+<!--     <div id="react-login"></div>
+    <script type="importmap">
+        {
+            "imports": {
+                "react": "https://esm.sh/react@18.2.0",
+                "react-dom": "https://esm.sh/react-dom@18.2.0",
+                "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime"
+            }
+        }
+    </script>
+    <script type="module">
+        import React from "react";
+        import ReactDOM from "react-dom";
+        import Login from './admin-src/components/login.js';
+        const elementoHTML  = document.getElementById('react-login');
+        const raizReact     = ReactDOM.createRoot( elementoHTML );
+        raizReact.render( React.createElement(Login) );
+    </script> -->
+    <!-- ################# END React Versión ###################### -->
+
+    <!-- ################# HTML Versión ###################### -->
+    <nav>
+        <img src="./assets/img/logo2.png" alt="logo learning">
+        <ul>
+            <li class="inicio"><h2><a href="./inicio.html">Home</a></h2></li>
+            <li><h2><a href="">Contacto</a></h2></li>
+        </ul>
+    </nav>
+    <section class="all-login">
+        <div class="inicio-secion">
+            <h1>Ingreso Usuarios</h1>
+            <form method="POST" action="login.html">
+
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" placeholder="correo" />
+                <span id="email-error"></span>
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" id="contrasena" placeholder="contraseña" />
+                <span id="password-error"></span>
+
+                <button type="submit">Ingresar</button>
+
+                <button type="submit"><a href="./registro.html"> Registrar</a></button>
+            </form>
+        </div>
+        <aside>
+            <img src="./assets/img/fondo2.png" alt="salpicadura de color">
+        </aside>
+    </section>
+    <footer>
+        <img src="./assets/img/logo2.png" alt="logo learning">
+        <div class="centro">
+            <h4>DESARROLLADO POR JHOSEFIN Y BREE2003</h4>
+        </div>
+        <div class="derecha">
+            <h4>© 2023 LEARNING INTERNACIONAL</h4>
+        </div>
+    </footer>
+    <script src="./assets/js/login.js"></script>
+    <!-- ################# END HTML Versión ###################### -->
+    
+</body>
+</html>
