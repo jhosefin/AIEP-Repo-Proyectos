@@ -1,0 +1,130 @@
+body, * {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../img/walpaperColor.jpg);
+    /* background-color: #C589A2; */
+        background-repeat: no-repeat;
+}
+.contenedor_principal {
+    display: grid;
+    grid-template-columns: 5.8fr 1.2fr;
+    grid-template-rows: 0.3fr 6.4fr 0.3fr;
+    grid-template-areas: 
+    "n n"
+    "s a"
+    "f f";
+    min-height: 100vh;
+
+}
+nav {
+    background-color: #A0BFEE;
+    grid-area: n;
+    display: flex;
+    align-items: center;
+}
+nav > img {
+    width: 15%;
+}
+nav > ul {
+    display: flex;
+    list-style: none;
+    width: 80%;
+}
+ul > li {
+    width: 40%;
+}
+li  a {
+    background-color:  #8883cf;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0 0.938em;
+    color: white;
+}
+li  a:hover{
+    background-color:white;
+    color:#8883cf;
+}
+li.inicio {
+    text-align: center;
+    margin: 0 0 0 12%;
+}
+section {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+    width: 60rem;
+    height: 40rem;
+    margin: 10rem;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+}
+
+aside > img {
+    width: 15rem;
+    height: 100%;
+    border-radius: 5rem;
+
+}
+footer {
+    grid-area: f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* alinea items en el eje x */
+    font-size: small;
+    /* padding: 10px 0; */
+    background-color: antiquewhite;
+}
+footer > img {
+    width: 10%;
+}
+div.centro {
+    text-align: center;
+}
+div.derecha {
+text-align: right;
+}
+.logo2{
+position: absolute;
+margin-top: 40%;
+margin-left: 15%;
+}
+.preguntas{
+    position: absolute;
+    margin-top: 38%;
+    margin-left: 20%;
+}
+.selecciones{
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+
+}
+.selecciones li a{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+#blue{
+    background-color: rgb(38, 89, 226);
+}
+#green{
+    background-color: rgb(55, 175, 55);
+}
+#purple{
+    background-color: rgb(164, 49, 164);
+}
+input.valid{
+    border: 2px solid rgb(53, 198, 53);
+}
+
+input.invalid{
+    border: 2px solid rgb(234, 19, 19);
+    font-style: italic;
+}

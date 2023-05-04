@@ -1,0 +1,73 @@
+div.presentacion > h1 {
+    font-size: xxx-large;
+    color: #4985df;
+    font-weight: 100%;
+    margin: 5% 0;
+}
+div.presentacion > h2 {
+    color:  #5e8ed7;
+    font-weight: 100;
+}
+form {
+    margin: 10% 0;
+    color: #F97777;
+    font-weight: 600;
+}
+input#nickname {
+    border: solid deeppink;
+}
+input[type="submit"] {
+    border-radius: 10px;
+    background-color: #4985df;
+    color: white;
+    border: solid #4985df;
+    padding: 12px;
+}
+
+section p{
+    margin: 4%;
+}
+.inicio-secion h1{
+    font-size: xxx-large;
+    color: #4985df;
+    font-weight: 100%;
+    margin: 5% 0;
+}
+.all-login{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px; 
+}
+.all-login form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10px; 
+    width: 50%;
+    margin-left: 25%;
+}
+.all-login form input{
+    border-radius: 0.5rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: #F97777;
+}
+.all-login form button{
+    border-radius: 0.5rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color:#5e8ed7;
+    color: rgb(245, 195, 236);
+}
+.all-login form button:hover{
+    background-color:rgb(245, 195, 236);
+    color: #5e8ed7;
+}
+.all-login form label{
+
+    color: rgb(109, 112, 16);
+    display: grid;
+    grid-template-columns: 0px;
+}
