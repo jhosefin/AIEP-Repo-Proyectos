@@ -72,7 +72,7 @@ formulario.addEventListener("submit", async (eventoSubmit) => {
         // guardo datos del usuario y TOKEN 
         localStorage.setItem('usuario', JSON.stringify(usuario));
         // redirijo a página protegida 
-        window.location = 'dashboard.html';
+        window.location = 'categoria.js';
 
     } catch (error) {
         // gestion errores 

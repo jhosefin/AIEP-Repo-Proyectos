@@ -19,30 +19,49 @@ function getColeccion() {
     return admin.firestore().collection('categorias');
 }
 
-async function procesarPOST(req, res) {    
+async function procesarPOST(req, res) {
     try {
-        const {nombre, descripcion} = req.body;
-        const categoria = {
-            nombre,
-            descripcion
-        }
-        const documento = await getColeccion().doc(); // crea documento vacío 
-        const id        = documento.id;
-        documento.set( categoria );
-        categoria.id = id; 
-        return categoria; 
+      const { pregunta, opcion } = req.body;
+      if (!opcion) {
+        throw new Error('Debe proporcionar una opción válida.');
+      }
+      const preguntaData = {
+        pregunta,
+        opcion,
+      };
+      const documento = await getColeccion().doc();
+      const id = documento.id;
+      documento.set(preguntaData);
+      preguntaData.id = id;
+      return preguntaData;
+    } catch (error) {
+      res.status(500).send({ error: error.message });
+    }
+  }
+
+async function procesarGET(req, res) {
+    try {
+        const querySnapshot = await getColeccion().get();
+        const documentos = querySnapshot.docs.map(d => {
+            return d.data();
+        });
+        return documentos;
     } catch (error) {
         res.code(500).send({error: error.message});
     }
-}
-
-async function procesarGET(req, res) {
-    return {m: 'GET'};
 }
 
 async function procesarPUT(req, res) {
     return {m: 'PUT'};
 }
 async function procesarDELETE(req, res) {
-    return {m: 'DELETE'};
+    try {
+        const id = req.query.id;
+        const docRef = await getColeccion().doc( id );
+        await docRef.delete();
+        return {borrado: true};
+    } catch (error) {
+        return {borrado: false, mensaje: error.message};
+    }
+
 }
